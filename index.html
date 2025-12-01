@@ -135,7 +135,15 @@
 <!-- Payment Details Container -->
 <div id="payment-details-container">
     <!-- UPI input -->
-    <input id="Payment-id" type="text" placeholder="Enter UPI ID" class="w-full p-3 rounded-lg input-field mb-3" style="display:none;">
+    <input id="upi-id" type="text" placeholder="Enter UPI ID" class="w-full p-3 rounded-lg input-field mb-3" style="display:none;">
+    
+    <!-- Bank details input -->
+    <div id="bank-details" style="display:none;">
+        <input id="account-number" type="text" placeholder="Account Number" class="w-full p-3 rounded-lg input-field mb-2">
+        <input id="ifsc-code" type="text" placeholder="IFSC Code" class="w-full p-3 rounded-lg input-field mb-2">
+        <input id="account-holder" type="text" placeholder="Account Holder Name" class="w-full p-3 rounded-lg input-field mb-2">
+    </div>
+</div>
                     <button id="withdraw-btn" class="w-full p-3 rounded-lg btn-accent mt-3">Request Withdrawal</button>
                 </div>
                 <div>
@@ -638,4 +646,5 @@
 </body>
 
 </html> 
+
 
